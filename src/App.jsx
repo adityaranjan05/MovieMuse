@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import SearchBar from "./Components/SearchBar";
-import MoviesCard from './Components/MoviesCard';
+
+import Home from './Pages/Home';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -20,16 +20,12 @@ function App() {
   
   return (
     <>
-      <SearchBar 
-        setSearchMovie = {setSearchMovie}
+      <Home
+        setSearchMovie={setSearchMovie}
         searchMovie={searchMovie}
         search={getMovies}
+        movies={movies}
       />
-      <div className='grid grid-cols-4 max-w-fit mx-auto mt-10 pt-5 pb-20 gap-18'>
-        {movies.map ((movie) => {
-          return <MoviesCard movie={movie} key={movie.imdbID} />
-        })}
-      </div>
     </>
   )
 }
