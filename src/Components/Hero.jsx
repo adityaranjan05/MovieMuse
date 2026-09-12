@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar"
 
 export default function Hero( {search, searchMovie, setSearchMovie} ) {
     return (
-        <section className="relative min-h-160 overflow-hidden">
+        <section className="relative min-h-180 overflow-hidden">
             <img
                 src={heroImg}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -12,12 +12,12 @@ export default function Hero( {search, searchMovie, setSearchMovie} ) {
 
             <div
                 className="absolute inset-0 bg-gradient-to-r
-                           from-[#12091F]
-                           via-[#2D1B4E]/20
-                           to-[#3B2463]/10"
+                           from-[#12091F]/90
+                           via-[#12091F]/40
+                           to-transparent"
             />
 
-            <div className="relative z-10 max-w-[95%] mx-auto pt-32">
+            <div className="relative z-10 max-w-[95%] mx-auto pt-32 flex justify-between">
                 <div className="max-w-3xl">
                     <h1 className="text-7xl text-white font-bold">Find Your Next</h1>
                     <h1 className="text-7xl text-orange-500 font-bold">Favorite Movie</h1>
@@ -31,12 +31,10 @@ export default function Hero( {search, searchMovie, setSearchMovie} ) {
                     />
                 </div>
                 
-                <div className="max-w-md">
-
+                <div className="w-40 h-fit relative top-50 p-6 bg-[#12091F]/40 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg shadow-purple-950/30">
+                    <h1 className="text-white/80 font-bold text-5xl">"</h1>
+                    <p className="text-white/80 text-xl font-bold">Movies make life a little brighter.</p>
                 </div>
-            </div>
-
-            <div className="relative z-10">
             </div>
 
         </section>

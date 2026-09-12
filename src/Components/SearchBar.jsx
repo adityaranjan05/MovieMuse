@@ -13,7 +13,7 @@ export default function SearchBar ( {setSearchMovie, searchMovie, search} ) {
                     placeholder="Search for a movie....."
                     value = {searchMovie}
                     onChange = { (e) => setSearchMovie(e.target.value) }
-                    className="flex-1 h-13 text-lg bg-purple-300/10 rounded-2xl text-white shadow-lg px-4 shadow-purple-950/30 border border-purple-400/60 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"    
+                    className="flex-1 h-13 text-lg bg-purple-900/10 backdrop-blur-lg rounded-2xl text-white shadow-lg px-4 shadow-purple-950/30 border border-purple-500/20 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"    
                 />
                 <button
                     onClick={search}
